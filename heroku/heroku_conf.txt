@@ -1,0 +1,4 @@
+CLEARDB_DATABASE_URL: mysql://be44d52f2c09f7:913ea73e@us-cdbr-iron-east-01.cleardb.net/heroku_dd8c27fba8852d7?reconnect=true
+
+/opt/lampp/bin/mysql --host=us-cdbr-iron-east-01.cleardb.net --user=be44d52f2c09f7 --password=913ea73e --reconnect heroku_dd8c27fba8852d7 < /home/caio_semantix/Projetos/javaSpring/CoopFit/BancoDeDados_MYSQL/newDB_DDL.sql
+

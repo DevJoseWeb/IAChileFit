@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Form answered</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+		<h1>
+			Questionario:
+		</h1>
+		<p>
+			Instante: <span
+				th:text="${#dates.format(questionario.data, 'dd/MM/yyyy hh:mm')}"></span>
+		</p>
+		<p>
+			Pessoa: <span th:text="${questionario.pessoa.nome}"></span>
+		</p>
+		<p>
+			Sentimento: <span th:text="${sentimento}"></span>
+		</p>
+		<h3>Detalhes:</h3>
+		<table border="1">
+			<tr>
+				<th>Água bebida</th>
+				<th>Quantidade estresse</th>
+			</tr>
+			<tr>
+				<td th:text="${agua}">Água</td>
+				<td th:text="${questionario.estresse}">Estresse</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
